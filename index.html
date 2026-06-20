@@ -1,36 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ILHAM.EXE</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
 body{
-background:#0f172a;
+background:#0a0f1f;
 color:white;
-font-family:Arial;
+font-family:'Segoe UI',sans-serif;
+line-height:1.8;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:50px;
+padding:20px;
+background:linear-gradient(180deg,#050816,#0a0f1f);
 }
 
-h1{
-font-size:60px;
+.hero h1{
+font-size:72px;
+color:#58a6ff;
 }
 
-.box{
-background:#1e293b;
-padding:30px;
-border-radius:20px;
-max-width:700px;
-margin:auto;
+.hero p{
+color:#b8c7e0;
+margin-top:10px;
 }
 
-button{
+.btn{
+display:inline-block;
+margin-top:30px;
 padding:15px 30px;
-border:none;
+background:#58a6ff;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+}
+
+.section{
+padding:80px 10%;
+}
+
+.title{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#58a6ff;
+}
+
+.card{
+background:#121b33;
+padding:25px;
+border-radius:20px;
+margin-bottom:20px;
+}
+
+.achievement{
+background:#121b33;
+padding:15px;
+margin:12px 0;
+border-left:4px solid #58a6ff;
 border-radius:10px;
-font-size:18px;
-cursor:pointer;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+border-radius:15px;
+transition:.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.timeline{
+border-left:3px solid #58a6ff;
+padding-left:25px;
+}
+
+.timeline div{
+margin-bottom:30px;
+}
+
+.footer{
+padding:100px 10%;
+text-align:center;
+background:#070b17;
+}
+
+.jawa{
+font-size:38px;
+color:#58a6ff;
+margin-top:40px;
+}
+
+.small{
+color:#8ea7cf;
 }
 
 </style>
@@ -38,32 +124,144 @@ cursor:pointer;
 
 <body>
 
+<section class="hero">
+
+<div>
+
 <h1>ILHAM.EXE</h1>
 
-<div class="box">
+<p>Legendary Human Archive</p>
 
-<p>Scanning personality...</p>
+<br>
 
 <p>✓ Kindness detected</p>
 <p>✓ Care detected</p>
 <p>✓ Strength detected</p>
 <p>✓ Humility detected</p>
+<p>✓ Legendary Human detected</p>
 
-<br>
+<a href="#hall" class="btn">
+OPEN ARCHIVE
+</a>
+
+</div>
+
+</section>
+
+<section class="section" id="hall">
+
+<h2 class="title">🏆 Hall of Fame</h2>
+
+<div class="card">
+Selamat datang di arsip digital seorang manusia yang diduga terlalu baik untuk ukuran manusia biasa.
+</div>
+
+<div class="achievement">🏆 Pendengar Premium</div>
+<div class="achievement">🏆 Master Bilang "Gapapa"</div>
+<div class="achievement">🏆 Orang Baik Bersertifikat</div>
+<div class="achievement">🏆 Selalu Berusaha Kuat</div>
+<div class="achievement">🏆 Inspirasi Tanpa Sadar</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">🖼 Poster Collection</h2>
+
+<div class="gallery">
+
+<img src="gambar 2.png">
+<img src="gambar 4.png">
+<img src="gambar 5.png">
+<img src="sertifikat.png">
+<img src="edisi bhs jawa.png">
+<img src="daftar prestasi.png">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">📜 Timeline</h2>
+
+<div class="timeline">
+
+<div>
+<h3>200X</h3>
+<p>Player Spawned.</p>
+</div>
+
+<div>
+<h3>20XX</h3>
+<p>Mulai sekolah dan membuat dunia sedikit lebih hangat.</p>
+</div>
+
+<div>
+<h3>20XX</h3>
+<p>Unlock Skill: Peduli Pada Orang Lain.</p>
+</div>
+
+<div>
+<h3>2026</h3>
+<p>LEVEL UP 🎂</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="footer">
+
+<h2 class="title">Untuk Seseorang yang Sedang Bertambah Usia</h2>
+
+<div style="max-width:800px;margin:auto;">
 
 <p>
-Selamat datang di arsip digital seseorang
-yang mungkin tidak sadar bahwa keberadaannya
-pernah membuat orang lain ingin menjadi lebih baik.
+Hari ini seseorang yang pernah membuatku percaya bahwa menjadi baik adalah pilihan yang indah sedang bertambah usia.
 </p>
 
 <br>
 
-<button onclick="alert('Happy Birthday, Ilham 🎉')">
-Open Archive
-</button>
+<p>
+Semoga semesta memperlakukannya dengan lembut. Semoga lelah yang sering ia sembunyikan menemukan tempat untuk beristirahat. Semoga segala hal yang ia perjuangkan diam-diam diberi jalan yang lapang.
+</p>
+
+<br>
+
+<p>
+Ia selalu terlihat kuat, seolah mampu menanggung semuanya sendiri. Padahal aku tahu, menjadi kuat setiap hari juga pasti melelahkan.
+</p>
+
+<br>
+
+<p>
+Terima kasih karena tanpa sadar telah mengajarkanku banyak hal. Tentang ketulusan, tentang kepedulian, dan tentang bagaimana tetap menjadi manusia yang baik meski hidup tidak selalu berjalan mudah.
+</p>
+
+<br>
+
+<p>
+Dan yang paling tidak pernah kusangka, berkat dirimu aku jadi ingin memperbaiki diri sebaik-baiknya.
+</p>
+
+<br>
+
+<p>
+Selamat bertambah usia untuk seseorang yang mungkin tidak pernah tahu betapa berharganya dirinya dalam cerita hidup orang lain.
+</p>
+
+<div class="jawa">
+ꦱꦸꦒꦼꦁ ꦠꦁꦒꦥ꧀ ꦮꦂꦱ, ꦆꦭ꧀ꦲꦩ꧀
+</div>
+
+<p class="small">
+Sugeng Tanggap Warsa, Ilham
+</p>
 
 </div>
+
+</section>
 
 </body>
 </html>
